@@ -9,7 +9,6 @@ import 'swiper/css/pagination';
 
 export default function ProductCarousel({ products }) {
   const [activeSlide, setActiveSlide] = useState(0);
-  const [swiperInstance, setSwiperInstance] = useState(null);
   const [slidesPerView, setSlidesPerView] = useState(1);
 
   useEffect(() => {
@@ -47,7 +46,6 @@ export default function ProductCarousel({ products }) {
           prevEl: '.custom-prev' 
         }}
         pagination={false}
-        onSwiper={setSwiperInstance}
         onSlideChange={(swiper) => setActiveSlide(swiper.activeIndex)}
         breakpoints={{
           640: { slidesPerView: 2 },

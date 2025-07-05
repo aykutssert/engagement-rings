@@ -34,7 +34,7 @@ export default function ProductCard({ product }) {
             padding: '16px',
             marginBottom: '16px'
         }}>
-            <img
+            <Image
                 src={product.images[selectedColor]}
                 alt={product.name}
                 style={{
